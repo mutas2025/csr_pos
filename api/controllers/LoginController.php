@@ -38,7 +38,7 @@ class LoginController {
 
         // We prepare our SQL query. Using a question mark (?) as a placeholder
         // helps prevent a common web vulnerability called SQL injection.
-        $stmt = $this->con->prepare("SELECT * FROM users WHERE username = ?");
+        $stmt = $this->con->prepare("SELECT * FROM tbl_users WHERE username = ?");
         
         // We execute the prepared statement, passing the user-provided username
         // into the placeholder.
