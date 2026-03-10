@@ -38,7 +38,7 @@ header('Content-Type: application/json');
 
 // Include the RegisterController class. This class handles all the logic
 // for creating new user accounts, including validation and database insertion.
-require_once 'controllers/UsersController.php';
+require_once __DIR__ . '/controllers/UsersController.php';
 
 // Include the LoginController class. This class handles all the logic
 // for authenticating users (verifying username and password).
